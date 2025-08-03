@@ -1,39 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>True Honest Academics T.H.A. </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True Honest Academics</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 20px;
-      color: #2c3e50;
+      background-color: #fdfaf6;
+      color: #2c2c2c;
       line-height: 1.6;
     }
-    h1, h2, h3 {
-      color: #34495e;
+
+    header {
+      background-color: #6f4e37;
+      color: #fff;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-    .package {
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 6px;
-      background: #f9f9f9;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .price {
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
-      font-size: 1.2em;
-      color: #27ae60;
     }
-    .discounts {
-      background: #e8f5e9;
-      padding: 15px;
-      border-left: 5px solid #27ae60;
-      margin-top: 20px;
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
     }
+
+    .hero {
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #4a3c2f;
+      margin-bottom: 20px;
+    }
+
+    .packages div {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+
+    .contact button {
+      background-color: #6f4e37;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>T.H.A.</strong></div>
+      <div>
+        <a href="#mission">Mission</a>
+        <a href="#packages">Programs</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>True Honest Academics</h1>
+    <p>For the child they counted out. Peace. I’m talking to the ones who feel unseen.., the ones who sit in the back, who stopped raising their hands, who started thinking maybe school isn't really for them. Let me tell you something real: You are not a project. You are not a problem. You are a possibility.
+
+The world tried to read you wrong. Labeled you. Misunderstood you. But you? You speak a language the world forgot. You decode pain like a scholar, move through silence like a scientist. That’s brilliance actually. 
+
+So don’t ever believe you were left behind. You were just left out and we’re here to bring you in. Because reading is more then just letters making up words in a books. It’s about reading the world. Reading people. Reading power. And when you learn to do that? You become unstoppable.
+
+You are wanted. Not unwanted. Not a number. Not a test score. You are a future leader, thinker, builder, and healer.
+
+So rise up. Build your mind. Read your way out. Speak your truth. And never, ever forget: We see you. And we need you.
+
+Let’s get it. That’s True Honest Academics.”
+ We bring them back in.</p>
+  </section>
+
+  <section id="mission">
+    <h2 class="section-title">Mission Statement</h2>
+    <p>
+      We serve the child they labeled, misunderstood, or ignored. We see brilliance where others saw disruption. We provide math tutoring, reading comprehension, and refreshing learning tools in a warm, relatable, and empowering space.
+    </p>
+  </section>
+
+  <section id="packages">
+    <h2 class="section-title">Programs & Pricing</h2>
+    <div class="packages">
+      <div>
+        <h3>Starter</h3>
+        <p>1 session/week · Reading or Math</p>
+        <p>$50 registration · $100/month</p>
+      </div>
+      <div>
+        <h3>Standard</h3>
+        <p>2 sessions/week · Mix of Reading + Math</p>
+        <p>$50 registration · $150/month</p>
+      </div>
+      <div>
+        <h3>Family Plan</h3>
+        <p>2 students · 1 session each/week</p>
+        <p>$75 registration · $175/month</p>
+      </div>
+    </div>
+    <p>Discounts available for group or returning families. Contact us to learn more.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 True Honest Academics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
     .photos {
       display: flex;
       gap: 15px;
