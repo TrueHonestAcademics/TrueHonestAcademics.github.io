@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,99 +10,133 @@
       margin: 0;
       padding: 0;
       font-family: 'DM Sans', sans-serif;
-    }
+    }body {
+  background-color: #fdfaf6;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
 
-    body {
-      background-color: #fdfaf6;
-      color: #2c2c2c;
-      line-height: 1.6;
-    }
+header {
+  background-color: #6f4e37;
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-    header {
-      background-color: #6f4e37;
-      color: #fff;
-      padding: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.hero {
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 20px;
+}
 
-    .hero {
-      text-align: center;
-      background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
-      color: #fff;
-      padding: 100px 20px;
-    }
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
 
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
+.hero p {
+  font-size: 1.2rem;
+}
 
-    .hero p {
-      font-size: 1.2rem;
-    }
+.section-title {
+  font-size: 2rem;
+  color: #4a3c2f;
+  margin-bottom: 20px;
+}
 
-    .section-title {
-      font-size: 2rem;
-      color: #4a3c2f;
-      margin-bottom: 20px;
-    }
+.packages div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
 
-    .packages div {
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      background-color: #fff;
-    }
+.photos {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  justify-content: center;
+}
 
-    .contact form {
-      display: flex;
-      flex-direction: column;
-    }
+.photos img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
 
-    .contact input, .contact textarea {
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-    }
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
 
-    .contact button {
-      background-color: #6f4e37;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 1em;
+  box-sizing: border-box;
+}
 
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
+.contact button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #219150;
+}
+
+.cta {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta button {
+  font-size: 1.3em;
+  padding: 15px 40px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
   </style>
 </head>
 <body>
@@ -116,32 +149,13 @@
         <a href="#contact">Contact</a>
       </div>
     </nav>
-  </header>
-
-  <section class="hero">
+  </header>  <section class="hero">
     <h1>True Honest Academics</h1>
-    <p>For the child they counted out. Peace. I’m talking to the ones who feel unseen.., the ones who sit in the back, who stopped raising their hands, who started thinking maybe school isn't really for them. Let me tell you something real: You are not a project. You are not a problem. You are a possibility.
-
-The world tried to read you wrong. Labeled you. Misunderstood you. But you? You speak a language the world forgot. You decode pain like a scholar, move through silence like a scientist. That’s brilliance actually. 
-
-So don’t ever believe you were left behind. You were just left out and we’re here to bring you in. Because reading is more then just letters making up words in a books. It’s about reading the world. Reading people. Reading power. And when you learn to do that? You become unstoppable.
-
-You are wanted. Not unwanted. Not a number. Not a test score. You are a future leader, thinker, builder, and healer.
-
-So rise up. Build your mind. Read your way out. Speak your truth. And never, ever forget: We see you. And we need you.
-
-Let’s get it. That’s True Honest Academics.”
- We bring them back in.</p>
-  </section>
-
-  <section id="mission">
+    <p>For the child they counted out. Peace. We speak to the ones who feel unseen, who sit in the back, who stopped raising hands, who wonder if school is for them. You are not a project. You are a possibility. You decode pain like a scholar and move through silence like a scientist. You are wanted, not unwanted. Not a number. Not a score. You are a future leader, thinker, and builder. We see you. We need you.</p>
+  </section>  <section id="mission">
     <h2 class="section-title">Mission Statement</h2>
-    <p>
-      We serve the child they labeled, misunderstood, or ignored. We see brilliance where others saw disruption. We provide math tutoring, reading comprehension, and refreshing learning tools in a warm, relatable, and empowering space.
-    </p>
-  </section>
-
-  <section id="packages">
+    <p>We serve the child they labeled, misunderstood, or ignored. We see brilliance where others saw disruption. We provide tutoring, reading, and learning tools in a warm, relatable, and empowering space.</p>
+  </section>  <section id="packages">
     <h2 class="section-title">Programs & Pricing</h2>
     <div class="packages">
       <div>
@@ -160,135 +174,29 @@ Let’s get it. That’s True Honest Academics.”
         <p>$75 registration · $175/month</p>
       </div>
     </div>
-    <p>Discounts available for group or returning families. Contact us to learn more.</p>
-  </section>
-
-  <section id="contact" class="contact">
+    <p>Discounts available for families and groups. Contact us to learn more.</p>
+  </section>  <div class="photos">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60" alt="Child focused on reading">
+    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=60" alt="Child doing math work">
+    <img src="https://images.unsplash.com/photo-1506917989563-5b60a828d6a3?auto=format&fit=crop&w=600&q=60" alt="Child writing notes">
+  </div>  <div class="cta">
+    <p>Ready to build confidence and skills? Get started today!</p>
+    <button onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+  </div>  <section id="contact" class="contact">
     <h2 class="section-title">Get In Touch</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <form id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required><label for="email">Email Address</label>
+  <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
 
-  <footer>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" placeholder="Ask us anything or request a callback" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+  </section>  <footer>
     <p>&copy; 2025 True Honest Academics. All rights reserved.</p>
   </footer>
-</body>
-</html>
-    .photos {
-      display: flex;
-      gap: 15px;
-      margin: 20px 0;
-      justify-content: center;
-    }
-    .photos img {
-      width: 30%;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    form {
-      margin-top: 30px;
-      background: #f1f1f1;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-      box-sizing: border-box;
-    }
-    button {
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #219150;
-    }
-    .cta {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .cta button {
-      font-size: 1.3em;
-      padding: 15px 40px;
-    }
-  </style>
-</head>
-<body>
-  <h1>True Honest Academics</h1>
-  <p>We exist for the child they counted out. We build minds that cannot be fooled.</p>
-
-  <h2>Our Tutoring Packages</h2>
-
-  <div class="package">
-    <h3>Basic</h3>
-    <p>Math tutoring and reading comprehension refresher.</p>
-    <p class="price">$50 registration fee, $100/month</p>
-  </div>
-
-  <div class="package">
-    <h3>Standard</h3>
-    <p>Weekly 30-minute sessions focused on math and reading skills.</p>
-    <p class="price">$50 registration fee, $125/month</p>
-  </div>
-
-  <div class="package">
-    <h3>Premium</h3>
-    <p>Weekly 60-minute sessions plus personalized learning plan.</p>
-    <p class="price">$50 registration fee, $175/month</p>
-  </div>
-
-  <div class="discounts">
-    <h3>Family & Group Discounts</h3>
-    <ul>
-      <li>10% off for families enrolling two or more children</li>
-      <li>15% off for group sessions of 3 or more students</li>
-    </ul>
-  </div>
-
-  <div class="photos">
-    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60" alt="Child focused on reading" />
-    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=60" alt="Child doing math work" />
-    <img src="https://images.unsplash.com/photo-1506917989563-5b60a828d6a3?auto=format&fit=crop&w=600&q=60" alt="Child writing notes" />
-  </div>
-
-  <div class="cta">
-    <p>Ready to build confidence and skills? Get started today!</p>
-    <button onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
-      Contact Us
-    </button>
-  </div>
-
-  <form id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-    <h2>Contact Us</h2>
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" placeholder="Your full name" required />
-
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="4" placeholder="Ask us anything or request a callback" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
 </body>
 </html>
