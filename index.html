@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>True Honest Academics</title>
-  </head>
-  <body>
-    <h1>Welcome to T.H.A.</h1>
-    <p>We exist for the child they counted out. We build minds that can't be misled.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>True Honest Academics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #34495e;
+    }
+    .package {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      background: #f9f9f9;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #27ae60;
+    }
+    .discounts {
+      background: #e8f5e9;
+      padding: 15px;
+      border-left: 5px solid #27ae60;
+      margin-top: 20px;
+    }
+    .photos {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    .photos img {
+      width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    form {
+      margin-top: 30px;
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #219150;
+    }
+    .cta {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .cta button {
+      font-size: 1.3em;
+      padding: 15px 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>True Honest Academics</h1>
+  <p>We exist for the child they counted out. We build minds that cannot be fooled.</p>
+
+  <h2>Our Tutoring Packages</h2>
+
+  <div class="package">
+    <h3>Basic</h3>
+    <p>Math tutoring and reading comprehension refresher.</p>
+    <p class="price">$50 registration fee, $100/month</p>
+  </div>
+
+  <div class="package">
+    <h3>Standard</h3>
+    <p>Weekly 30-minute sessions focused on math and reading skills.</p>
+    <p class="price">$50 registration fee, $125/month</p>
+  </div>
+
+  <div class="package">
+    <h3>Premium</h3>
+    <p>Weekly 60-minute sessions plus personalized learning plan.</p>
+    <p class="price">$50 registration fee, $175/month</p>
+  </div>
+
+  <div class="discounts">
+    <h3>Family & Group Discounts</h3>
+    <ul>
+      <li>10% off for families enrolling two or more children</li>
+      <li>15% off for group sessions of 3 or more students</li>
+    </ul>
+  </div>
+
+  <div class="photos">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60" alt="Child focused on reading" />
+    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=60" alt="Child doing math work" />
+    <img src="https://images.unsplash.com/photo-1506917989563-5b60a828d6a3?auto=format&fit=crop&w=600&q=60" alt="Child writing notes" />
+  </div>
+
+  <div class="cta">
+    <p>Ready to build confidence and skills? Get started today!</p>
+    <button onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">
+      Contact Us
+    </button>
+  </div>
+
+  <form id="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+    <h2>Contact Us</h2>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Ask us anything or request a callback" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</body>
 </html>
